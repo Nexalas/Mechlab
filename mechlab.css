@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+html, body {
+	padding: 0;
+	margin: 0;
+	background:
+    url("https://imgix.kotaku.com.au/content/uploads/sites/3/2019/12/mechwarrior-5-retail-10.jpg?auto=format&fit=fill&q=65&w=720")
+}
+header#header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 56px;
+	background: white;
+	z-index: 999;
+}
+#header-img {
+	display: block;
+	position: absolute;
+	left: 56px;
+	top: 9px;
+	width: 38px;
+	height: 38px;
+	background: url("https://static.mw5mercs.com/img/media/d47728d97433ef9c60a9a23ee8bc8b4f.jpeg") center no-repeat;
+	background-size: 100% 100%;
+	justify-self: flex-start;
+}
+nav#nav-bar {
+	position: fixed;
+	right: 16px;
+	height: 56px;
+}
+.nav-link {
+	font-family: "Oswald", sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #333333;
+	margin: 0 16px;
+	line-height: 56px;
+	transition: color 200ms;
+}
+.nav-link:hover {
+	transition: color 200ms;
+	color: #E7222E;
+}
+#mech {
+	margin-top: 56px;
+	width: 100%;
+	height: calc(80vh - 56px);
+	background: url('https://static.mw5mercs.com/img/media/d47728d97433ef9c60a9a23ee8bc8b4f.jpeg'),
+		linear-gradient(#534363, #ffffff 50%);
+	background-size: cover, cover;
+	background-position: center, top;
+	background-blend-mode: multiply;
+}
+#tag-container {
+	padding: 56px;
+  position: relative;
+  bottom: 15px;
+  
+}
+#tag-container > h1 {
+	font-family: "Oswald", sans-serif;
+	text-transform: uppercase;
+	line-height: 1rem;
+	margin: 0;
+	color: white;
+}
+#tag-container > p {
+	font-family: sans-serif;
+	color: white;
+  position: relative;
+  top: 10px;
+}
+.content {
+	background: #212121;
+	color: white;
+	min-height: 50vh;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+#section_1 {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+.flex_col {
+	box-sizing: border-box;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+	padding: 24px;
+}
+.flex_col:last-child::before {
+	content: '';
+	width: 1px;
+	height: 80%;
+	background: #797979;
+	position: absolute;
+	left: 0;
+}
+h2 {
+	font-family: "Oswald", sans-serif;
+	margin: 0 0 24px 0;
+}
+.flex_col > p {
+	margin: 0;
+	font-family: sans-serif;
+	line-height: 1.5rem;
+	opacity: 0.8;
+}
+#performance {
+	margin: 0 auto;
+  line-height: 3rem;
+}
+.key {
+	display: inline-block;
+	font-family: "Oswald", sans-serif;
+	font-size: 1.125rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: right;
+	width: 66px;
+	margin: 0 16px 25px 0;
+}
+.key::after {
+	content: '';
+	width: 70%;
+	height: 1px;
+	background: #797979;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,36px);
+}
+.value {
+	display: inline-block;
+	font-family: "Oswald", sans-serif;
+	font-size: 1.15rem;
+	letter-spacing: .05rem;
+	text-transform: uppercase;
+}
+#section_2 {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	background: #333333;
+	padding-top: 24px;
+	padding-bottom: 48px;
+  
+}
+.option_card {
+	max-width: 30vw;
+	min-width: 300px;
+	height: 300px;
+	margin-top: 100px;
+	background: white;
+	color: #333333;
+	border-radius: 2px;
+	box-shadow: 0 24px 24px -12px rgba(0,0,0,0.53);
+  
+}
+.option_card > img {
+	max-width: 300px;
+	margin-top: -25%;
+}
+.option_card > h3 {
+	font-family: "Oswald", sans-serif;
+	letter-spacing: .01rem;
+	font-size: 1.5rem;
+	text-align: center;
+	margin: 0;
+}
+.option_card > p {
+	color: #E7222E;
+	font-family: sans-serif;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	border-bottom: 1px solid #E7222E;
+	padding-bottom: 8px;
+	max-width: 80%;
+	margin: 8px auto;
+}
+ul {
+	list-style: none;
+	padding-left: 0;
+	margin: 32px 0 0 32px;
+  position: relative;
+  bottom: 20px;
+}
+li {
+	margin: 16px 0;
+	font-family: sans-serif;
+	font-weight: lighter;
+	font-size: 1.125rem;
+  
+  
+}
+
+#section_3 {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+#quote {
+	max-width: 50%;
+	min-width: 30%;
+  position: relative;
+  left: 10px;
+}
+#quote > p:first-child {
+	font-size: 2rem;
+	font-family: "Oswald", sans-serif;
+	line-height: 2.2rem;
+	margin: 0;
+}
+#quote > p:first-child::before {
+	content: '"';
+	display: inline-block;
+	margin-left: -12px;
+	font-size: 2.5rem;
+	font-family: "Oswald", sans-serif;
+	transform: translate(-2px, 6px);
+}
+#quote > p:first-child::after {
+	content: '"';
+	display: inline-block;
+	margin-left: 4px;
+	font-size: 2.5rem;
+	font-family: "Oswald", sans-serif;
+	transform: translate(0, 6px);
+}
+#quote > p:nth-child(2) {
+	margin: 24px 0 0 0;
+	font-size: 1.25rem;
+	font-family: sans-serif;
+	opacity: 0.8;
+}
+#quote > p:nth-child(2)::before {
+	content: '';
+	display: inline-block;
+	margin-right: 12px;
+	width: 30px;
+	height: 18px;
+	background: linear-gradient(to right, #81C4FF 30%, #16588E 31%, #16588E 66%, #E7222E 67%);
+	transform: skewX(-30deg);
+}
+
+#sub-form {
+	min-height: 120px;
+	background: #333333;
+	padding: 48px 16px;
+	text-align: center;
+}
+#sub-form > h3 {
+	margin: 0 0 24px;
+	color: white;
+	font-size: 2rem;
+	font-family: "Oswald", sans-serif;
+	text-transform: uppercase;
+}
+#form {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+#email {
+	width: 300px;
+	height: 36px;
+	padding: 0 16px;
+	margin: 0;
+	font-size: 1rem;
+	border: none;
+	box-sizing: border-box;
+}
+#submit {
+	display: inline-block;
+	height: 36px;
+	width: 100px;
+	margin: 0;
+	padding: 0;
+	color: white;
+	background: #E7222E;
+	font-family: "Oswald", sans-serif;
+	font-weight: bold;
+	font-size: 1rem;
+	text-transform: uppercase;
+	letter-spacing: 0.05rem;
+	border: none;
+	box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+	.nav-link {
+		margin: 4px;
+	}
+	#tag-container > h1 {
+		font-size: 1.2rem;
+	}
+	#section_1 {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+	.flex_col {
+		width: 100%;
+	}
+	.flex_col:last-child::before {
+		content: '';
+		width: 80%;
+		height: 1px;
+		background: #797979;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.option_card {
+		margin: 48px 16px 32px;
+		max-width: calc(100% - 32px);
+		min-width: 0;
+	}
+	.option_card > img {
+		transform: translateX(-20px);
+	}
+	.option_card > h3 {
+		font-size: 1.2rem;
+	}
+	#quote {
+		margin: 24px 0;
+	}
+	#sub-form > h3 {
+		font-size: 1.5rem;
+	}
+	#form {
+		display: block;
+	}
+	#email {
+		max-width: calc(100% - 32px);
+		margin-bottom: 16px;
+	}
+}
+
+
+
+
+
+
+
+
+  .modal {
+        display: none;
+        position: fixed;
+        z-index: 8;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+      .modal-content {
+        margin: 50px auto;
+        border: 1px solid #999;
+        width: 60%;
+      }
+      h2,p {
+        margin: 0 0 20px;
+        font-weight: 400;
+        color: #999;
+      }      span {
+        color: #666;
+        display: block;
+        padding: 0 0 5px;
+      }
+      form {
+        padding: 25px;
+        margin: 25px;
+        box-shadow: 0 2px 5px #f5f5f5;
+        background: #eee;
+      }
+      input,
+      textarea {
+        width: 90%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #1c87c9;
+        outline: none;
+      }
+      .contact-form button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        background: #1c87c9;
+        font-size: 16px;
+        font-weight: 400;
+        color: #fff;
+        
+        
+      }
+      button:hover {
+        background: #2371a0;
+      }
+      .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+      .close:hover,
+      .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      button.button {
+        background-color: lightslategray;
+        border: 2px solid;
+  border-radius: 5px;
+        padding: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        position: fixed;
+        right: 0;
+        z-index: 1000;
+      }
+      button.button:hover {
+        border-bottom: black 1px solid;
+        color: silver;
+        
+      }
+
+
+
+
+
+
+
+
+img:hover {
+transform: scale(2.5);
+  justify-content: center;
+}
+
+.thumbnail:hover {
+  justify-content: center;
+    align-items: center;
+    width:2000px;
+    height:auto;
+    display:block;
+    z-index:999;
+}
